@@ -1,11 +1,13 @@
-import {} from "../createTypes";
+import { setJobList } from "../createTypes";
 
-const initialState = {};
+const initialState = {
+  listJob: null,
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "":
-      return;
+    case setJobList:
+      return { ...state, listJob: action.payload };
     default:
       return state;
   }

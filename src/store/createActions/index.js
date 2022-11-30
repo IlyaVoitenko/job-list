@@ -1,5 +1,5 @@
-import {} from "../createTypes";
+import { setJobList } from "../createTypes";
 
-export function getClientsAction(payload) {
-  return { type: "", payload };
+export function getDataListJob(payload) {
+  return { type: setJobList, payload };
 }
