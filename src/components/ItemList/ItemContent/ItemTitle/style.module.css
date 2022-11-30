@@ -1,0 +1,14 @@
+.fontTitle {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  /* or 125% */
+
+  letter-spacing: -0.625px;
+
+  /* Text/Dark */
+
+  color: #3a4562;
+}

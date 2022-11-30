@@ -10,7 +10,6 @@ const ListJob = () => {
   if (!listJob) {
     dispatch(getDataListJob({ ...data }));
   }
-  console.log(listJob);
   return listJob.data.map((item) => <ItemList data={item} key={item.id} />);
 };
 

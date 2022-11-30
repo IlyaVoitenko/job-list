@@ -1,10 +1,9 @@
 import React from "react";
 
 const ItemPhoto = ({ photo }) => {
-  console.log(photo);
   return (
-    <div>
-      <img src={photo[0]} alt=""></img>
+    <div className="w-12 ">
+      <img src={photo[0]} alt="" className="rounded-full"></img>
     </div>
   );
 };

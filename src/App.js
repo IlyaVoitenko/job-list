@@ -5,7 +5,7 @@ import ListJob from "./components/ListJob";
 getData();
 function App() {
   return (
-    <div className="App">
+    <div className="App flex  flex-col justify-items-center">
       <ListJob />
     </div>
   );
