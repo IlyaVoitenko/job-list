@@ -2,14 +2,18 @@ import React from "react";
 import ItemPhoto from "./ItemPhoto";
 import ItemContent from "./ItemContent";
 import ItemRating from "./ItemRating";
+import ItemSaveUpdateData from "./ItemSaveUpdateData";
 
 const ItemList = ({ data }) => {
   console.log("ItemList :", data);
   return (
-    <div className="h-24 container mx-auto flex  flex-row mt-2  ">
+    <div className="h-34 container mx-auto flex justify-center flex-row mt-2  bg-white w-3/4">
       <ItemPhoto photo={data.pictures} />
       <ItemContent context={data} />
-      <ItemRating />
+      <div className="flex flex-row justify-evenly w-1/4 ">
+        <ItemRating />
+        <ItemSaveUpdateData dataCreated={data.createdAt} />
+      </div>
     </div>
   );
 };

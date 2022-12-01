@@ -2,12 +2,12 @@ import React from "react";
 
 const ItemRating = () => {
   return (
-    <div className=" flex items-center">
-      <img alt="star" src="/star.png" />
-      <img alt="star" src="/star.png" />
-      <img alt="star" src="/star.png" />
-      <img alt="star" src="/star.png" />
-      <img alt="star" src="/star.png" />
+    <div className=" flex items-center justify-center ">
+      <img alt="star" src="/star.png" className="w-4 h-4" />
+      <img alt="star" src="/star.png" className="w-4 h-4" />
+      <img alt="star" src="/star.png" className="w-4 h-4" />
+      <img alt="star" src="/star.png" className="w-4 h-4" />
+      <img alt="star" src="/star.png" className="w-4 h-4" />
     </div>
   );
 };
