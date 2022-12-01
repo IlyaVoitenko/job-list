@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import ItemList from "../ItemList";
-import data from "../../api/mock/index.json";
-import { getDataListJob } from "../../store/createActions";
-import { useSelector, useDispatch } from "react-redux";
+import Pagination from "../Pagination";
+import { useSelector } from "react-redux";
 
 const ListJob = () => {
-  const dispatch = useDispatch();
   const listJob = useSelector((state) => state.listJob);
-  if (!listJob) {
-    dispatch(getDataListJob({ ...data }));
-  }
-  return listJob.data.map((item) => <ItemList data={item} key={item.id} />);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [amauntPostsPage] = useState(7);
+  const lastIndexPage = currentPage * amauntPostsPage;
+  const firstIndexPage = lastIndexPage - amauntPostsPage;
+  const currentPageIndex = listJob.slice(firstIndexPage, lastIndexPage);
+  const movePagination = (pageNumber) => setCurrentPage(pageNumber);
+
+  return (
+    <div>
+      {currentPageIndex.map((item) => (
+        <ItemList data={item} key={item.id} />
+      ))}
+      <Pagination
+        amauntPostsPage={amauntPostsPage}
+        totalPosts={listJob.length}
+        movePagination={movePagination}
+        currentPage={currentPage}
+      />
+    </div>
+  );
 };
 
 export default ListJob;

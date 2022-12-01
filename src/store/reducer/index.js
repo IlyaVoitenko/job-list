@@ -1,7 +1,7 @@
 import { setJobList } from "../createTypes";
 
 const initialState = {
-  listJob: null,
+  listJob: [],
 };
 
 const reducer = (state = initialState, action) => {

@@ -6,6 +6,8 @@ const url =
 
 export function getData() {
   return (dispatch) => {
-    return axios.get(url).then(({ data }) => dispatch(getDataListJob(data)));
+    return axios.get(url).then(({ data }) => {
+      dispatch(getDataListJob(data));
+    });
   };
 }

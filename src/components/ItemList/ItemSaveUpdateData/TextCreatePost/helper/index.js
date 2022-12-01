@@ -9,9 +9,7 @@ export function postCreated(dataCreated) {
     postCreated = `${Math.ceil(daysLag / 28)} days ago`;
   }
   if ((daysLag) => 28) {
-    console.log(daysLag);
     postCreated = `${Math.ceil(daysLag / 28)} month ago`;
-    console.log("month :");
   }
   if ((daysLag) => 365) {
     postCreated = `${Math.ceil(daysLag / 365)} year ago`;
