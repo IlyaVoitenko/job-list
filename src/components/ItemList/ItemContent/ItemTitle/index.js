@@ -1,8 +1,13 @@
 import React from "react";
-import style from "./style.module.css";
 
 const ItemTitle = ({ title }) => {
-  return <div className={`${style.fontTitle}  `}>{title}</div>;
+  return (
+    <div
+      className={`text-regal-blue font-proximaNova  text-titleFontSize text-left font-bold tracking-titleLetterSpacing leading-titleLineHeight`}
+    >
+      {title}
+    </div>
+  );
 };
 
 export default ItemTitle;

@@ -1,9 +1,10 @@
 import React from "react";
-import style from "./style.module.css";
 
 const ItemDepartmen = ({ address }) => {
   return (
-    <div className={`text-left mt-1	${style.textDepartment}`}>
+    <div
+      className={`text-left mt-1 font-proximaNova leading-titleLineHeight text-adressTextColor font-normal text-adressFontSize tracking-afressLetterSpacing`}
+    >
       Department name • {address}
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./style.module.css";
 
 const ItemGeoData = ({ geolocation }) => {
   return (
@@ -9,7 +8,9 @@ const ItemGeoData = ({ geolocation }) => {
         alt=""
         className="w-2.5 h-4 flex mt-1"
       ></img>
-      <span className={`${style.textCityCountry} flex ml-2`}>
+      <span
+        className={` flex ml-2 font-proximaNova leading-titleLineHeight text-adressTextColor font-normal text-adressFontSize tracking-afressLetterSpacing`}
+      >
         Vienna, Austria
       </span>
     </div>

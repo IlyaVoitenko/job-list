@@ -17,6 +17,9 @@ const Pagination = ({
           <li className="ml-2">
             <img src="/arrow left.png" alt=""></img>
           </li>
+          <li className=" w-10 h-5 flex  justify-center content-center ">
+            <img className="" alt="" src="/Separator 1.png" />
+          </li>
           <li className="flex-1">
             {numberPage.map((number) => (
               <button
@@ -27,13 +30,16 @@ const Pagination = ({
                 href="#"
                 className={
                   currentPage === number
-                    ? "border-b-4 border-indigo-500 hover:bg-blue-200 relative inline-flex items-center px-4 py-2  text-sm font-medium text-indigo-500"
-                    : "bg-white border-gray-300 text-gray-500 hover:bg-blue-200 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+                    ? "border-b-4 border-indigo-500 hover:bg-blue-200 relative inline-flex items-center px-4 py-2  text-sm  text-indigo-500 font-proximaNova"
+                    : "bg-white border-gray-300 text-gray-500 hover:bg-blue-200 relative inline-flex items-center px-4 py-2 border text-sm font-proximaNova"
                 }
               >
                 {number}
               </button>
             ))}
+          </li>
+          <li className=" w-10 h-5 flex  justify-center content-center ">
+            <img className="" alt="" src="/Separator 1.png" />
           </li>
           <li className="mr-2">
             <img src="/arrow right.png" alt="" className="text-gray-500"></img>
