@@ -5,7 +5,7 @@ const TextCreatePost = ({ dataCreated }) => {
   const datePosted = postCreated(dataCreated);
   return (
     <div
-      className={` h-full  ml-3 flex items-end font-proximaNova leading-titleLineHeight text-adressTextColor font-normal text-adressFontSize tracking-afressLetterSpacing `}
+      className={` h-full  ml-3 flex items-end font-proximaNova leading-titleLineHeight text-adressTextColor font-normal text-adressFontSize tracking-adressLetterSpacing `}
     >
       posted {datePosted}
     </div>

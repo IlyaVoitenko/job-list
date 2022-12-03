@@ -9,7 +9,7 @@ const ItemGeoData = ({ geolocation }) => {
         className="w-2.5 h-4 flex mt-1"
       ></img>
       <span
-        className={` flex ml-2 font-proximaNova leading-titleLineHeight text-adressTextColor font-normal text-adressFontSize tracking-afressLetterSpacing`}
+        className={` flex ml-2 font-proximaNova leading-titleLineHeight text-adressTextColor font-normal text-adressFontSize tracking-adressLetterSpacing`}
       >
         Vienna, Austria
       </span>
