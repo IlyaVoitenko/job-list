@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 
 const ListJob = () => {
   const listJob = useSelector((state) => state.listJob);
+
+  console.log("listJob :", listJob);
   const [currentPage, setCurrentPage] = useState(1);
   const [amauntPostsPage] = useState(7);
   const lastIndexPage = currentPage * amauntPostsPage;

@@ -1,4 +1,5 @@
 import axios from "axios";
+import mock from "./mock/index.json";
 import { getDataListJob } from "../store/createActions";
 
 const url =
@@ -6,8 +7,13 @@ const url =
 
 export function getData() {
   return (dispatch) => {
-    return axios.get(url).then(({ data }) => {
-      dispatch(getDataListJob(data));
-    });
+    return axios
+      .get(url)
+      .then(({ data }) => {
+        dispatch(getDataListJob(data));
+      })
+      .catch(() => {
+        dispatch(getDataListJob(mock.data));
+      });
   };
 }
