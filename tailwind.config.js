@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      listStyleType: {
+        square: "square",
+      },
       backgroundImage: {
         bgImageMap: "url('/public/Map.png')",
       },
