@@ -1,5 +1,6 @@
 import React from "react";
 import Compensation from "../Compensation";
+import BtnApply from "../BtnApply";
 
 const Description = ({ descriptionText }) => {
   const firstParagraph = descriptionText.split("Responsopilities")[0];
@@ -22,6 +23,7 @@ const Description = ({ descriptionText }) => {
         Compensation & Benefits:
       </p>
       <Compensation listCompensation={thirdParagraph} />
+      <BtnApply />
     </div>
   );
 };

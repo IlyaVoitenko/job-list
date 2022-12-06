@@ -4,6 +4,7 @@ import BtnApply from "./BtnApply";
 import TitleSalary from "./TitleSalary";
 import DataPosted from "./DataPosted";
 import Description from "./Description";
+import AdditionalInfo from "./AdditionalInfo";
 
 const MainContent = ({ data }) => {
   console.log("data :", data);
@@ -14,6 +15,7 @@ const MainContent = ({ data }) => {
       <TitleSalary salary={data.salary} title={data.title} />
       <DataPosted dataCreated={data.createdAt} />
       <Description descriptionText={data.description} />
+      <AdditionalInfo data={data} />
     </div>
   );
 };

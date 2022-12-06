@@ -17,6 +17,12 @@ module.exports = {
         "regal-blue": "#3a4562",
         adressTextColor: "#878D9D",
         bgGeolocMap: "#2A3047",
+        bgBtnsEmploy: "rgba(161, 177, 219, 0.317343)",
+        bgBtnsBenefits: "rgba(255, 207, 0, 0.15)",
+        borederColorBtnsEmploy: " rgba(85, 105, 158, 0.3)",
+        borederColorBtnsBenefits: "#FFCF00",
+        textItemEmployment: "#55699E",
+        textItemBenefits: "#988B49",
       },
       fontSize: {
         titleFontSize: "20px",
