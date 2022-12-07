@@ -11,8 +11,8 @@ const Pagination = ({
     numberPage.push(i);
   }
   return (
-    <div className="py-5   flex items-center justify-center w-70">
-      <nav className="  bg-orange-100 rounded-lg w-1/4">
+    <div className="py-5   flex items-center justify-center w-70 ">
+      <nav className="  bg-orange-100 rounded-lg w-1/4 sm:w-[95%]">
         <ul className=" flex pl-0 rounded list-none flex-wrap  justify-center items-center bg-white">
           <li className="ml-2">
             <img src="/arrow left.png" alt=""></img>

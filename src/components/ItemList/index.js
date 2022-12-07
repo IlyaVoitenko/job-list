@@ -14,13 +14,15 @@ const ItemList = ({ data }) => {
     <Link to="/detail-job">
       <div
         onClick={() => dispatch(getSelectedJob(data))}
-        className="h-34 rounded-lg container mx-auto flex justify-center flex-row mt-2  bg-white w-3/4"
+        className="h-34 rounded-lg container mx-auto flex justify-center flex-row mt-2  bg-white w-3/4 sm:flex-row sm:w-[95%]"
       >
         <ItemPhoto photo={data.pictures} />
-        <ItemContent context={data} />
-        <div className="flex flex-row justify-evenly w-1/4 ">
-          <ItemRating />
-          <ItemSaveUpdateData dataCreated={data.createdAt} />
+        <div className="flex flex-1 sm:flex-col-reverse">
+          <ItemContent context={data} />
+          <div className="flex flex-row justify-evenly w-1/4 sm:flex-row  sm:items-start sm:w-full sm:justify-between ">
+            <ItemRating />
+            <ItemSaveUpdateData dataCreated={data.createdAt} />
+          </div>
         </div>
       </div>
     </Link>
