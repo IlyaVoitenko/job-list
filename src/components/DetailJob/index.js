@@ -1,12 +1,11 @@
 import React from "react";
 import PostDetail from "./PostDetail";
-import BtnBack from "./BtnBack";
-
+import BtnReturn from "./MainContent/BtnReturn";
 const DetailJob = () => {
   return (
     <div className="bg-white">
-      <BtnBack />
       <PostDetail />
+      <BtnReturn />
     </div>
   );
 };
