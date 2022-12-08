@@ -6,7 +6,7 @@ import Address from "./Address";
 
 const GeolocMap = ({ address, email, phone }) => {
   return (
-    <div className="flex h-[430px] w-[402px] flex-col bg-bgGeolocMap items-center mt-5 rounded-md  bg-bgImageMap">
+    <div className="flex h-[430px] w-[402px] flex-col bg-bgGeolocMap items-center mt-5 rounded-md  bg-bgImageMap sm:w-[90%] sm:h-[590px] sm:ml-5">
       <Department />
       <Address address={address} />
       <NumberPhone phone={phone} />

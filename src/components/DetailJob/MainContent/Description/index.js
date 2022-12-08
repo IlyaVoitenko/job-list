@@ -9,7 +9,7 @@ const Description = ({ descriptionText }) => {
     .split("Compensation & Benefits:")[1]
     .split(".");
   return (
-    <div className="text-left mt-2 w-[92%]">
+    <div className="text-left mt-2 w-[92%] sm:w-full ">
       <span className=" font-robot not-italic text-regal-blue font-normal">
         {firstParagraph}
       </span>

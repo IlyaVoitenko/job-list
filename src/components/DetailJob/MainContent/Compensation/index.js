@@ -4,7 +4,7 @@ const Compensation = ({ listCompensation }) => {
   const filteredList = listCompensation.filter((item) => item !== "\n\n");
   return (
     <div>
-      <ul className="w-1/2 list-square">
+      <ul className="w-1/2 list-square sm:w-full sm:list-inside ">
         {filteredList.map((text, index) => {
           return (
             <li
