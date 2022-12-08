@@ -15,7 +15,7 @@ const PostDetail = () => {
   return (
     <div className="flex flex-row justify-center  sm:flex-col ">
       <MainContent data={selectedJob} />
-      <div className="sm:mt-5  sm:bg-black ">
+      <div className="sm:mt-5  ">
         {innerWidth < 1024 ? <ContactTitle /> : null}
         <GeolocMap
           email={selectedJob.email}
