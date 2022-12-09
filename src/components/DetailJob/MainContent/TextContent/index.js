@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import TitleSalary from "../TitleSalary";
-import DataPosted from "../DataPosted";
-import Description from "../Description";
-import AttachedImages from "../AttachedImages";
+import TitleSalary from "./TitleSalary";
+import DataPosted from "./DataPosted";
+import Description from "./Description";
+import AttachedImages from "./AttachedImages";
 import { getWindowSize, getSizeWindow } from "../helper";
 
 const TextContent = ({
