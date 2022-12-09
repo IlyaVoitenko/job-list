@@ -1,6 +1,6 @@
 import React from "react";
-import Compensation from "../Compensation";
-import BtnApply from "../BtnApply";
+import Compensation from "../../Compensation";
+import BtnApply from "../../BtnApply";
 
 const Description = ({ descriptionText }) => {
   const firstParagraph = descriptionText.split("Responsopilities")[0];

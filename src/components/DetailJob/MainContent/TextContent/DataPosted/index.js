@@ -1,5 +1,5 @@
 import React from "react";
-import { postCreated } from "../../../ItemList/ItemSaveUpdateData/TextCreatePost/helper";
+import { postCreated } from "../../../../ItemList/ItemSaveUpdateData/TextCreatePost/helper";
 
 const DataPosted = ({ dataCreated }) => {
   const dataPosted = postCreated(dataCreated);

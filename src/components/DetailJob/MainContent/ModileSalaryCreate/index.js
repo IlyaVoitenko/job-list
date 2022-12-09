@@ -1,5 +1,5 @@
 import React from "react";
-import DataPosted from "../DataPosted";
+import DataPosted from "../../MainContent/TextContent/DataPosted";
 const ModileSalaryCreate = ({ salary, dataCreated }) => {
   return (
     <div className="flex w-2/5 text-right sm:w-full sm:justify-center sm:items-center  sm:flex-row">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ModileSalaryCreate from "../ModileSalaryCreate";
-import { getSizeWindow, getWindowSize } from "../helper";
+import ModileSalaryCreate from "../../ModileSalaryCreate";
+import { getSizeWindow, getWindowSize } from "../../helper";
 const TitleSalary = ({ salary, title, dataCreated }) => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
